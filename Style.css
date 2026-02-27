@@ -55,7 +55,7 @@ header{
     width: 100%;
     padding: 2rem 9%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     z-index: 1000;
 }
@@ -106,6 +106,9 @@ header .mode{
     font-size: 1.5rem;
     border-radius: 50%;
     cursor: pointer;
+}
+header .bg-nav{
+    display:none;
 }
 .sign-up {
     position: relative;
@@ -274,11 +277,11 @@ header .mode{
 .about .about-banner{
     flex:1 1 450px;
 }
-.about .about-banner > h3{
+.about .about-banner h3{
     font-size:2.6rem;
     margin-bottom:1.5rem;
 }
-.about .about-banner > p{
+.about .about-banner p{
     font-size:1.6rem;
     color:var(--text-muted);
     margin-bottom:2rem;
@@ -397,4 +400,81 @@ footer .sci a:hover{
 }
 footer .sci a:hover i{
     color:var(--card);
+}
+header .toggle-btn{
+    display:none;
+    position:relative;
+    right:5%;
+    font-size:3rem;
+    color:var(--text);
+    cursor:pointer;
+}
+@media (max-width: 992px){
+    html{
+        font-size: 60%;
+    }
+    section{
+        padding: 0 5%;
+    }
+    header{
+        padding: 2rem 5%;
+    }
+    .home .content-herobanner h3{
+        font-size: 3.3rem;
+        line-height: 2.5rem;
+    }
+    .home .content-herobanner h3 span{
+        font-size: 5.5rem;
+        line-height: 5.5rem;
+    }
+    .home .image-herobanner img{
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+    html{
+        font-size: 59%;
+    }
+    header .toggle-btn{
+        display:block;
+    }
+    header .navbar{
+        position: absolute;
+        top: -300px;
+        left: 0;
+        width: 100%;
+        background: var(--bg);
+        padding: 1rem 5%;
+        box-shadow:var(--shadow);
+        border-top: .1rem solid var(--shadow);
+        overflow: hidden;
+        transition: .8s;
+        z-index: -2;
+    }
+    header .navbar.slide{
+        top: 100%;
+    }
+    header .navbar a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 1.8rem;
+    }
+    header .mode{
+        display: absolute;
+        right: 12%;
+    }
+    header .bg-nav{
+        position: fixed;
+        display:block;
+        top: 0;
+        left: 0;
+        width: 100;
+        height: 78px;
+        background: var(--bg);
+        z-index: -1;
+        transition: 1s;
+    }
+    section{
+        padding: 2rem 5%;
+    }
 }
