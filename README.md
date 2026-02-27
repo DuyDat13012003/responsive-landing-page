@@ -57,4 +57,4 @@ https://github.com/DuyDat13012003/responsive-landing-page
 **Duy Dat Nguyen**  
 Frontend Developer Intern  
 
-LinkedIn: (thêm link LinkedIn của bạn)
+LinkedIn: www.linkedin.com/in/duy-đạt-nguyễn-hữu-duy-đạt-03529b348
